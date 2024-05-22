@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="YUXIANG CHEN" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Binario</title>
+    <style>
+        body {text-align: center;}
+        p{margin-top: 40vh;}
+        h1{color: lightskyblue;}
+    </style>
+</head>
+<body>
+    <script>
+        let a = prompt ("ecribe un numero entero entre el 0 y el 255")
+        a = parseInt (a);
+        let c1 = parseInt (a/2);
+        let r1 = a%2;
+        let c2 = parseInt (c1/2);
+        let r2 = c1%2;
+        let c3 = parseInt (c2/2);
+        let r3 = c2%2;
+        let c4 = parseInt (c3/2);
+        let r4 = c3%2;
+        let c5 = parseInt (c4/2);
+        let r5 = c4%2;
+        let c6 = parseInt (c5/2);
+        let r6 = c5%2;
+        let c7 = parseInt (c6/2);
+        let r7 = c6%2;
+        let binario = [c7, r7, r6, r5, r4, r3, r2, r1]
+    </script>
+    <p>el numero <script>document.write(a)</script> el binario es</p>
+    <h1><script>document.write(binario)</script></h1>
+</body>
+</html>
