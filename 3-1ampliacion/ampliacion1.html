@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de Audio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #797070;
+    }
+
+    #audioContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #audioImage {
+      width: 22vw;
+      height: auto;
+      cursor: pointer;
+      border-radius: 20%;
+    }
+    #cancion{text-align: center;}
+  </style>
+</head>
+<body>
+
+<div id="audioContainer">
+  <div id="cancion">
+    <img id="audioImage" src="images/milo j.webp" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="milo j.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+<div id="cancion">
+  <img id="audioImage" src="images/selass.jpeg" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="elsela.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+<div id="cancion">
+  <img id="audioImage" src="images/milo j.webp" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="salamutas.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+  <div id="cancion">
+    <img id="audioImage" src="images/milo j.webp" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="phonk.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+<div id="cancion">
+  <img id="audioImage" src="images/milo j.webp" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="erika.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+<div id="cancion">
+  <img id="audioImage" src="images/milo j.webp" alt="Imagen del álbum">
+  <audio id="audioPlayer" controls>
+    <source src="mexico.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+</div>
+
+<script>
+  const audioPlayer = document.getElementById('audioPlayer');
+  const audioImage = document.getElementById('audioImage');
+
+  audioImage.addEventListener('click', toggleAudio);
+
+  function toggleAudio() {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  }
+</script>
+
+</body>
+</html>
